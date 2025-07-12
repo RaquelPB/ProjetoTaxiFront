@@ -6,6 +6,9 @@
   margin: 2rem auto;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
   font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .menu-chamado-container h2 {
@@ -26,6 +29,7 @@
   font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.2s ease;
+  width: fit-content;
 }
 
 .menu-chamado-container button:hover {
@@ -62,4 +66,39 @@
 .menu-chamado-container li strong {
   color: #1e1e2f;
   font-size: 1.1rem;
+}
+
+
+@media screen and (max-width: 600px) {
+  .menu-chamado-container {
+    padding: 2rem 1rem;
+  }
+
+  .menu-chamado-container h2 {
+    font-size: 1.6rem;
+  }
+
+  .menu-chamado-container h3 {
+    font-size: 1.2rem;
+  }
+
+  .menu-chamado-container button {
+    width: 100%;
+    max-width: 300px;
+    font-size: 0.95rem;
+  }
+
+  .menu-chamado-container ul {
+    width: 100%;
+    padding: 0;
+  }
+
+  .menu-chamado-container li {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .menu-chamado-container li strong {
+    font-size: 1rem;
+  }
 }

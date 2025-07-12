@@ -129,8 +129,7 @@ function ClienteForm() {
           required
         />
 
-        <label>Bairro:</label>
-        <input name="endereco.bairro" value={formData.endereco.bairro} onChange={handleChange} required />
+    
 
         <label>Cidade:</label>
         <input name="endereco.cidade" value={formData.endereco.cidade} onChange={handleChange} required />
@@ -138,8 +137,6 @@ function ClienteForm() {
         <label>Estado:</label>
         <input name="endereco.estado" value={formData.endereco.estado} onChange={handleChange} required />
 
-        <label>CEP:</label>
-        <input name="endereco.cep" value={formData.endereco.cep} onChange={handleChange} required />
 
         <br /><br />
         <button type="submit" disabled={carregando}>
